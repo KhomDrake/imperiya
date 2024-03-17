@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".ui.search.SearchSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warnings.WarningSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warnings.warning.BigWarningSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warnings.smallwarning.SmallWarningSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warnings.warning.examples.WarningErrorSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warnings.warning.examples.WarningSuccessSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warnings.warning.examples.WarningDefaultSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.warnings.warning.examples.WarningWithoutIconSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.stateview.StateViewSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ColorsActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ColorsDynamicActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+    </application>
+
+</manifest>
