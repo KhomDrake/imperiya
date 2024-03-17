@@ -16,10 +16,10 @@ import br.com.cosmind.imperiya.R
 
 class WarningView : ConstraintLayout {
 
-    private val title: AppCompatTextView by viewProvider(R.id.small_warning_title)
-    private val body: AppCompatTextView by viewProvider(R.id.small_warning_body)
+    private val title: AppCompatTextView by viewProvider(R.id.warning_title)
+    private val body: AppCompatTextView by viewProvider(R.id.warning_body)
     private val statusIcon: AppCompatImageView by viewProvider(R.id.status_icon)
-    private val tryAgainButton: AppCompatTextView by viewProvider(R.id.small_warning_try_again_button)
+    private val tryAgainButton: AppCompatTextView by viewProvider(R.id.warning_try_again_button)
     private val closeIcon: AppCompatImageView by viewProvider(R.id.close_icon)
 
     constructor(context: Context) : this(context, null)

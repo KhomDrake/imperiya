@@ -46,6 +46,18 @@
             android:name=".ui.ColorsDynamicActivity"
             android:theme="@style/Imperiya.Theme"
             android:exported="false" />
+        <activity
+            android:name=".ui.bottomsheet.BottomSheetSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chips.ChipsSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
+        <activity
+            android:name=".ui.tablayout.TabLayoutSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
     </application>
 
 </manifest>

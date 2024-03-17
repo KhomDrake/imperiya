@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Imperiya.Widget.Toolbar"
-        app:title="Small Warning Sample"
+        app:title="State View Sample"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.vlv.imperiya.core.ui.stateview.StateView
+    <br.com.cosmind.imperiya.ui.stateview.StateView
         android:id="@+id/state_view_default"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         app:state_title="Failure title you put it here"
         app:state_body="Failure body you put it here"/>
 
-    <com.vlv.imperiya.core.ui.stateview.StateView
+    <br.com.cosmind.imperiya.ui.stateview.StateView
         android:id="@+id/state_view_custom_icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

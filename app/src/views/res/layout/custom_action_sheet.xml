@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Action Sheet"
+        style="@style/Imperiya.Style.Text.Subtitle.Bold"
+        android:textColor="@color/color_imperiya_on_background"/>
+
+    <br.com.cosmind.imperiya.ui.stateview.StateView
+        android:id="@+id/state_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Custom Action Sheet"
+        app:state_title="Normal state"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Close button"
+        style="@style/Imperiya.Widget.Button" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -8,9 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.arch.toolkit.delegate.viewProvider
 import br.com.cosmind.sample.ui.ColorsActivity
 import br.com.cosmind.sample.ui.ColorsDynamicActivity
+import br.com.cosmind.sample.ui.bottomsheet.BottomSheetSampleActivity
+import br.com.cosmind.sample.ui.chips.ChipsSampleActivity
 import br.com.cosmind.sample.ui.warnings.WarningSampleActivity
 import br.com.cosmind.sample.ui.search.SearchSampleActivity
 import br.com.cosmind.sample.ui.stateview.StateViewSampleActivity
+import br.com.cosmind.sample.ui.tablayout.TabLayoutSampleActivity
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
@@ -35,7 +38,16 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                 "Search Views", SearchSampleActivity::class
             ),
             Component(
-                "Warning View", WarningSampleActivity::class
+                "Error State", WarningSampleActivity::class
+            ),
+            Component(
+                "Chips", ChipsSampleActivity::class
+            ),
+            Component(
+                "Bottom Sheet", BottomSheetSampleActivity::class
+            ),
+            Component(
+                "Tab Layout", TabLayoutSampleActivity::class
             ),
             Component(
                 "State View", StateViewSampleActivity::class
