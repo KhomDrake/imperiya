@@ -8,7 +8,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Bottom Sheet Sample"
+        app:title="Tabs Sample"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/Imperiya.Widget.Toolbar"/>
 

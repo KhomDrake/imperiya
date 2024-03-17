@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Buttons Sample"
+        style="@style/Imperiya.Widget.Toolbar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        style="@style/Imperiya.Widget.Button"
+        android:gravity="center"
+        android:text="Normal Button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/neutral_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        style="@style/Imperiya.Widget.Button.Neutral"
+        android:gravity="center"
+        android:text="Neutral Button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/error_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        style="@style/Imperiya.Widget.Button.Error"
+        android:gravity="center"
+        android:text="Error Button"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

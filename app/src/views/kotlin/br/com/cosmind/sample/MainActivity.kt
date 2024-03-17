@@ -9,6 +9,7 @@ import br.com.arch.toolkit.delegate.viewProvider
 import br.com.cosmind.sample.ui.ColorsActivity
 import br.com.cosmind.sample.ui.ColorsDynamicActivity
 import br.com.cosmind.sample.ui.bottomsheet.BottomSheetSampleActivity
+import br.com.cosmind.sample.ui.button.ButtonSampleActivity
 import br.com.cosmind.sample.ui.chips.ChipsSampleActivity
 import br.com.cosmind.sample.ui.warnings.WarningSampleActivity
 import br.com.cosmind.sample.ui.search.SearchSampleActivity
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             ),
             Component(
                 "Error State", WarningSampleActivity::class
+            ),
+            Component(
+                "Buttons", ButtonSampleActivity::class
             ),
             Component(
                 "Chips", ChipsSampleActivity::class

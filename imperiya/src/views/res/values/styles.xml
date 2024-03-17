@@ -60,7 +60,13 @@
     <style name="Imperiya.Widget.Button.Neutral">
         <item name="android:background">@drawable/imperiya_button_background_neutral</item>
         <item name="background">@drawable/imperiya_button_background_neutral</item>
-        <item name="android:textColor">@color/imperiya_color_primary</item>
+        <item name="android:textColor">@color/color_imperiya_on_background</item>
+    </style>
+
+    <style name="Imperiya.Widget.Button.Error">
+        <item name="android:background">@drawable/imperiya_button_background_error</item>
+        <item name="background">@drawable/imperiya_button_background_error</item>
+        <item name="android:textColor">@color/color_imperiya_on_error</item>
     </style>
 
     <style name="Imperiya.Widget.Chip" parent="Widget.Material3.Chip.Filter">

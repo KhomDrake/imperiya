@@ -79,7 +79,7 @@
     <color name="color_imperiya_dark_onTertiaryContainer">#BDE9FF</color>
     <color name="color_imperiya_dark_error">#FF6B6B</color>
     <color name="color_imperiya_dark_errorContainer">#93000A</color>
-    <color name="color_imperiya_dark_onError">#690005</color>
+    <color name="color_imperiya_dark_onError">#FFFFFF</color>
     <color name="color_imperiya_dark_onErrorContainer">#FFDAD6</color>
     <color name="color_imperiya_dark_background">#191C1E</color>
     <color name="color_imperiya_dark_onBackground">#E1E2E5</color>
