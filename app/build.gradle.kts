@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "br.com.cosmind.sample"
+    namespace = "br.com.khomdrake.sample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "br.com.cosmind.sample"
+        applicationId = "br.com.khomdrake.sample"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -50,6 +50,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {

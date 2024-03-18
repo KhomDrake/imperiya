@@ -3,9 +3,11 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+apply(from = "$rootDir/gradle/publish.gradle")
+
 android {
-    namespace = "br.com.cosmind.imperiya"
-    compileSdk = 33
+    compileSdk = 34
+    namespace = "br.com.khomdrake.imperiya"
 
     defaultConfig {
         minSdk = 26
@@ -21,6 +23,13 @@ android {
         }
         create("views") {
             dimension = "uitool"
+        }
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
         }
     }
 
@@ -62,6 +71,7 @@ dependencies {
     implementation(libs.shimmer)
     implementation(libs.pagerindicator)
     api(platform(libs.androidx.compose.bom))
+    api(libs.androidx.compose.runtime)
     api(libs.androidx.compose.material3)
     api(libs.androidx.compose.activity)
     api(libs.androidx.compose.livedata)

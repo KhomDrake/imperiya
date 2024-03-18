@@ -13,7 +13,7 @@
         style="@style/Imperiya.Widget.Toolbar"
         app:title="Search" />
 
-    <br.com.cosmind.imperiya.ui.search.ImperiyaSearchView
+    <br.com.khomdrake.imperiya.ui.search.ImperiyaSearchView
         android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         android:text="Text Submit: "
         style="@style/Imperiya.Style.Text.Paragraph"/>
 
-    <br.com.cosmind.imperiya.ui.search.ImperiyaSearchView
+    <br.com.khomdrake.imperiya.ui.search.ImperiyaSearchView
         android:id="@+id/search_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         android:layout_marginHorizontal="16dp"
         style="@style/Imperiya.Style.SearchView"/>
 
-    <br.com.cosmind.imperiya.ui.search.ImperiyaToolbarView
+    <br.com.khomdrake.imperiya.ui.search.ImperiyaToolbarView
         android:id="@+id/search_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

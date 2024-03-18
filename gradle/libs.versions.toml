@@ -22,13 +22,14 @@ core-testing-version = "2.2.0"
 compose-shimmer-verison = "1.2.0"
 
 android-lifecycle-livedata-version = "1.1.1"
-androidx-compose-bom-version = "2024.02.01"
+androidx-compose-bom-version = "2024.02.02"
 androidx-compose-activity-version = "1.8.2"
 androidx-compose-viewmodel-version = "2.7.0"
+androidx-compose-runtime-version = "1.7.0-alpha04"
 androidx-compose-paging-version = "3.3.0-alpha04"
 androidx-compose-constraintlayout-version = "1.0.1"
-androidx-compose-preview-version = "1.7.0-alpha03"
-androidx-compose-icons-version = "1.6.2"
+androidx-compose-preview-version = "1.7.0-alpha04"
+androidx-compose-icons-version = "1.6.3"
 androidx-lifecycle-viewmodel-version = "2.7.0"
 androidx-startup-runtime-version = "1.1.1"
 androidx-room-version = "2.6.1"
@@ -73,6 +74,7 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 androidx-compose-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "androidx-compose-constraintlayout-version"  }
 androidx-compose-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "androidx-compose-preview-version" }
 androidx-compose-tooling-debug = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "androidx-compose-runtime-version" }
 androidx-compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-compose-activity-version" }
 androidx-compose-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata" }
 androidx-compose-paging = { group = "androidx.paging", name = "paging-compose", version.ref = "androidx-compose-paging-version" }
