@@ -28,11 +28,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.os.bundleOf
 import br.com.cosmind.imperiya.ui.components.DefaultTopBar
+import br.com.cosmind.imperiya.ui.components.NormalButton
 import br.com.cosmind.imperiya.ui.theme.ImperiyaTheme
 import br.com.cosmind.imperiya.ui.theme.ImperiyaTypography
 import br.com.cosmind.sample.ui.ColorsActivity
 import br.com.cosmind.sample.ui.DynamicColorsActivity
 import br.com.cosmind.sample.ui.bottomsheet.BottomSheetActivity
+import br.com.cosmind.sample.ui.button.ButtonSampleActivity
 import br.com.cosmind.sample.ui.chips.ChipsSampleActivity
 import br.com.cosmind.sample.ui.search.SearchSampleActivity
 import br.com.cosmind.sample.ui.state.StateComponentSampleActivity
@@ -91,6 +93,10 @@ class MainActivity : ComponentActivity() {
             Component(
                 "Search",
                 SearchSampleActivity::class
+            ),
+            Component(
+                "Buttons",
+                ButtonSampleActivity::class
             ),
             Component(
                 "State Component",
@@ -182,22 +188,21 @@ fun ButtonList(
                 .fillMaxHeight()
                 .padding(top = it.calculateTopPadding())
         ) {
-            Text(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 16.dp, end = 16.dp, top = 12.dp),
-                text = "Components:",
-                style = ImperiyaTypography.TitleStyle,
-                color = MaterialTheme.colorScheme.onBackground
-            )
             LazyColumn(
-                contentPadding = PaddingValues(
-                    start = 16.dp,
-                    end = 16.dp,
-                    top = 16.dp
-                ),
+                contentPadding = PaddingValues(16.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
+                item(
+                    key = "Title"
+                ) {
+                    Text(
+                        modifier = Modifier
+                            .fillMaxWidth(),
+                        text = "Components:",
+                        style = ImperiyaTypography.TitleStyle,
+                        color = MaterialTheme.colorScheme.onBackground
+                    )
+                }
                 items(items = activities) { component ->
                     ComponentItem(
                         component = component,
@@ -219,17 +224,11 @@ fun ComponentItem(
     onClick: (Component) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Button(
+    NormalButton(
         modifier = modifier,
-        onClick = {onClick.invoke(component)},
-        colors = ButtonDefaults.buttonColors(
-            containerColor = MaterialTheme.colorScheme.tertiary
-        )
-    ) {
-        Text(
-            text = component.title,
-            style = ImperiyaTypography.SubTitleBoldStyle,
-            color = MaterialTheme.colorScheme.onTertiary
-        )
-    }
+        onClick = {
+            onClick.invoke(component)
+        },
+        name = component.title
+    )
 }

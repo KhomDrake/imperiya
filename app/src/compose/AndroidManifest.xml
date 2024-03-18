@@ -54,6 +54,10 @@
             android:name=".ui.chips.ChipsSampleActivity"
             android:theme="@style/Imperiya.Theme"
             android:exported="false" />
+        <activity
+            android:name=".ui.button.ButtonSampleActivity"
+            android:theme="@style/Imperiya.Theme"
+            android:exported="false" />
     </application>
 
 </manifest>
