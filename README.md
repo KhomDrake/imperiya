@@ -38,6 +38,6 @@ There is a application module called app, which is two apps that display the com
 
 ## Why is named Imperiya?
 
-I have a book idea where this really important crystal named Imperiya and I found that is a good name for this library. I used the idea of a crystal to be the icon for the sample app.
+I have a book idea where exist this really important crystal named Imperiya and I found that is a good name for this library. I used the idea of a crystal to be the icon for the sample app.
 
 
