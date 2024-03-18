@@ -119,15 +119,15 @@ fun WarningView(
     ) {
         if(showCloseIcon) {
             IconButton(
-                onClick = { onCloseIcon?.invoke() }
+                onClick = { onCloseIcon?.invoke() },
+                modifier = Modifier
+                    .size(48.dp)
+                    .layoutId(closeIconId)
+                    .testTag(WarningViewTags.CLOSE_ICON.name)
             ) {
                 Icon(
                     painter = painterResource(id = R.drawable.ic_close),
                     contentDescription = "Close icon",
-                    modifier = Modifier
-                        .size(48.dp)
-                        .layoutId(closeIconId)
-                        .testTag(WarningViewTags.CLOSE_ICON.name),
                     tint = MaterialTheme.colorScheme.onBackground
                 )
             }

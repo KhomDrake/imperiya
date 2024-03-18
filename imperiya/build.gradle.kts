@@ -80,4 +80,25 @@ dependencies {
 
     implementation(libs.androidx.compose.tooling.debug)
     debugImplementation(libs.tests.compose.ui.manifest)
+
+    // Test
+    debugApi(libs.tests.androidx.fragment.testing)
+    androidTestImplementation(libs.tests.mockk.normal) {
+        exclude(module = "objenesis")
+        exclude(module = "mockk-agent-jvm")
+    }
+    androidTestImplementation(libs.tests.mockk.android) {
+        exclude(module = "objenesis")
+        exclude(module = "mockk-agent-jvm")
+    }
+    androidTestImplementation(libs.tests.guava)
+    androidTestImplementation(libs.tests.objenesis)
+    androidTestImplementation(libs.tests.androidx.core.testing)
+    androidTestImplementation(libs.tests.androidx.espresso.core)
+    androidTestImplementation(libs.tests.androidx.espresso.contrib)
+    androidTestImplementation(libs.tests.androidx.espresso.intents)
+    androidTestImplementation(libs.tests.androidx.fragment.testing)
+    androidTestImplementation(libs.tests.androidx.junit)
+    androidTestImplementation(libs.tests.junit)
+    androidTestImplementation(libs.tests.compose.ui.test)
 }
