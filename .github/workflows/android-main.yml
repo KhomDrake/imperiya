@@ -23,8 +23,6 @@ jobs:
         run: chmod +x gradlew
       - name: Config Env.properties
         run: echo '${{secrets.PUBLISH_DATA}}' > env.properties
-      - name: Configure GPG Key
-        run: gpg --keyserver keyserver.ubuntu.com --recv-keys '${{ secrets.GPG_KEY }}'
       - name: Build with Gradle
         run: ./gradlew :imperiya:assembleRelease
       - name: Publish
