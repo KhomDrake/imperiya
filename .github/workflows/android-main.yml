@@ -24,9 +24,9 @@ jobs:
       - name: Config Env.properties
         run: echo '${{secrets.PUBLISH_DATA}}' > env.properties
       - name: Assemble Views
-        run: ./gradlew assembleViewsRelease
+        run: ./gradlew :imperiya:assembleViewsRelease
       - name: Assemble Release
-        run: ./gradlew assembleComposeRelease
+        run: ./gradlew :imperiya:assembleComposeRelease
       - name: Publish
         run: ./gradlew publish 
           -Psigning.keyId=${{ secrets.KEY_ID }}
