@@ -23,8 +23,12 @@ jobs:
         run: chmod +x gradlew
       - name: Config Env.properties
         run: echo '${{secrets.PUBLISH_DATA}}' > env.properties
+      - name: Assemble Views
+        run: ./gradlew assembleViewsRelease
+      - name: Assemble Release
+        run: ./gradlew assembleComposeRelease
       - name: Publish
-        run: ./gradlew assemble publish 
+        run: ./gradlew publish 
           -Psigning.keyId=${{ secrets.KEY_ID }}
           -Psigning.password=${{ secrets.PASSWORD }}
           -Psigning.secretKeyRingFile=/home/runner/work/imperiya/imperiya/imperiya.gpg
