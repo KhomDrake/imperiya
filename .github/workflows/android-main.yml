@@ -23,8 +23,10 @@ jobs:
         run: chmod +x gradlew
       - name: Config Env.properties
         run: echo '${{secrets.PUBLISH_DATA}}' > env.properties
-      - name: Build with Gradle
-        run: ./gradlew :imperiya:assembleRelease
+      - name: Build with Gradle Views
+        run: ./gradlew :imperiya:assembleViewsRelease
+      - name: Build with Gradle Compose
+        run: ./gradlew :imperiya:assembleComposeRelease
       - name: Publish
         run: ./gradlew publish 
           -Psigning.keyId=${{ secrets.KEY_ID }}
