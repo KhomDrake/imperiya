@@ -28,4 +28,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew :imperiya:assembleRelease
       - name: Publish
-        run: ./gradlew publish
+        run: ./gradlew publish 
+          -Psigning.keyId=${{ secrets.KEY_ID }}
+          -Psigning.password=${{ secrets.PASSWORD }}
+          -Psigning.secretKeyRingFile=/home/runner/work/imperiya/imperiya/imperiya.gpg
