@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Chips Sample"
+        style="@style/Imperiya.Widget.Toolbar"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:clipToPadding="true"
+        android:layout_marginTop="8dp"
+        app:singleSelection="true"
+        app:singleLine="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/movie_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:tag="movie"
+            app:checkedIconEnabled="false"
+            style="@style/Imperiya.Widget.Chip"
+            android:text="Movie" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/series_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:tag="series"
+            app:checkedIconEnabled="false"
+            style="@style/Imperiya.Widget.Chip"
+            android:text="Tv Show" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/person_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:tag="person"
+            app:checkedIconEnabled="false"
+            style="@style/Imperiya.Widget.Chip"
+            android:text="People" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
